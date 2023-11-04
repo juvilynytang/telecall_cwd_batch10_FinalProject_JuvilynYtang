@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font awesome icon-->
+    <script src="https://kit.fontawesome.com/3f65e83df2.js" crossorigin="anonymous"></script>
+
+    <!--Font awesome cdnjs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--link CSS-->
+    <link rel="stylesheet" href="index.css">
+    <title>GECC</title>
+</head>
+
+<body>
+    <!--NAVIGATION BAR-->
+    <nav class="responsive-nav" id="sticky-nav">
+        <div class="nav-wrapper grey darken-2">
+            <a href="" class="sidenav-trigger show-on-large" data-target="slide-out"><i class="fa-solid fa-bars fa-2xl"
+                    style="color: #00ff1e;margin-right: 10px;margin-left: 10px;"></i></a>Menu
+            <ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-right: 10px">
+                <li style="margin-right: 30px"><a href="index.html" style="color: #00ff1e;" id="nav">Home</a></li>
+                <li style="margin-right: 30px"><a href="whoweare.html" style="color: #00ff1e;" id="nav">About Us</a>
+                </li>
+                <li style="margin-right: 30px"><a href="contact.html" style="color: #00ff1e;" id="nav"></i>Contact
+                        Us</a></li>
+                <li style="margin-right: 30px"><a href="whatsnew.html" style="color: #00ff1e;" id="nav">What's New</a></li>
+                <li><a href="https://www.facebook.com/GracelandCabuyao?mibextid=ZbWKwL" id="fb" target="_blank"><i
+                            class="fa-brands fa-facebook" style="color: #00ff1e;"></i></a></li>
+                <li><a href="https://www.instagram.com/gecccabuyao2023/?fbclid=IwAR0AHRe6Ot2PzK8ethdVhdV2UZS_27osssLWhv9Tq9Swz2wsa0KCha_wXtQ"
+                        id="insta" target="_blank"><i class="fa-brands fa-instagram" style="color: #00ff1e;"></i></a>
+                </li>
+                <li><a href="https://www.tiktok.com/@gecccabuyao?fbclid=IwAR2_cLg3I0ij6pCE4oOqpeNUPH7OdzqK5XfKpyICA0ff_ThBVwhDUPJYULE"
+                        id="tiktok" target="_blank"><i class="fa-brands fa-tiktok" style="color: #00ff1e;"></i></a></li>
+            </ul>
+        </div>
+
+        <!--Sidenav Dropdown structure-->
+        <!-- Ministry Dropdown Structure -->
+        <ul id="dropright" class="dropdown-content center red-text"><a href="ministry.html">Ministry</a><br>
+            <li><a href="#!">Worship</a></li>
+            <li><a href="#!">Media</a></li>
+            <li><a href="ministry.html">Youth & Children</a></li>
+            <li><a href="#!">Outreach & Evangelism</a></li>
+            <li><a href="#!">Men & Women</a></li>
+        </ul>
+        <!-- Ministry Dropdown Structure -->
+        <ul id="dropdown4" class="dropdown-content center red-text"><a href="kapeattinapay.html">Kape At Tinapay</a><br>
+            <li><a href="#!">Share your Devotion</a></li>
+        </ul>
+    </nav>
+    <!--SIDENAV-->
+    <ul class="sidenav" id="slide-out">
+        <br>
+        <img src="logo/logo2.png" class="brand-logo" width="60px" height="55px"><br>
+        <li class="black-text center" id="flow-text">Graceland Evangelical Christian Church<br>GECC</li>
+        <li style="margin-left: 30px"><a class="dropdown-trigger" href="ministry.html" data-target="dropright">Ministry
+                <i class="fa-solid fa-caret-down fa-sm right"></i></a></li>
+        <li style="margin-left: 30px"><a href="give.html">Give</a></li>
+        <li style="margin-left: 30px"><a href="#">Sermons</a></li>
+        <li style="margin-left: 30px"><a class="dropdown-trigger" href="kapeattinapay.html" data-target="dropdown4">Kape At Tinapay
+                <i class="fa-solid fa-caret-down fa-sm right"></i></a></li>
+    </ul>
+
+    <br><br><br>
+    <!--BODY-->
+    <div class="row">
+        <div class="col s12 white">
+            <div class="col s12 m12 l3">
+                <div style="font-family: Roboto; border-radius: 5px; padding: 1px 30px; width: 75%;">
+                    <h4>Contact Us</h4>
+                    <form action="#modal1" id="wpform">
+                        <div>
+                            <label>Full Name</label>
+                            <div>
+                                <input id="form" type="text" name="first_name" placeholder="Enter your full name"
+                                    required="required">
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <label>Email address</label>
+                            <div>
+                                <input id="form" type="email" name="email" placeholder="Enter your email address"
+                                    required="required">
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <label>Your Message</label>
+                            <div>
+                                <textarea id="message" type="text" name="message" placeholder="Enter your message"
+                                    required="required"></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <label>Upload document:</label>
+                            <input type="file" name="file">
+                        </div>
+                        <br>
+                        <input type="hidden" name="utf8" value="✓">
+                        <button class="btn modal-trigger waves-effect waves-light" href="#modal1" type="submit"
+                            name="action">Submit</button>
+                    </form>
+                    <!--Modal1 content-->
+                    <div id="modal1" class="modal white" style="width:600px;height:200px;">
+                        <div class="modal-content center">
+                            <h4>Submitted Sucessfully!</h4>
+                            <h6>Thank you for your message. We will review it and get back to you asap.</h6>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="contact.html" data-target="wpform"
+                                class="modal-close waves-effect waves green btn-flat">Okay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l3 center" id="contactus">
+                <p class="flow-text">Address:<br> B8 L10 Phase 4, St. Joseph Village 6, Brgy. Butong, Cabuyao,
+                    Philippines</p>
+                <p class="flow-text">Email us at:<br><u style="font-size: medium;font-style: italic;"
+                        class="grey-text">gecccabuyao@gmail.com</u></p>
+                <p class="flow-text">Follow Us:</p>
+                <a href="https://www.facebook.com/GracelandCabuyao?mibextid=ZbWKwL" id="fb" style="margin-right: 15px;"
+                    target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="
+                        color: #8a8d8b;"></i></a>
+                <a href="https://www.instagram.com/gecccabuyao2023/?fbclid=IwAR0AHRe6Ot2PzK8ethdVhdV2UZS_27osssLWhv9Tq9Swz2wsa0KCha_wXtQ"
+                    id="insta" style="margin-right: 15px;" target="_blank"><i class="fa-brands fa-instagram fa-2xl"
+                        style="color: #8a8d8b;"></i></a>
+                <a href="https://www.tiktok.com/@gecccabuyao?fbclid=IwAR2_cLg3I0ij6pCE4oOqpeNUPH7OdzqK5XfKpyICA0ff_ThBVwhDUPJYULE"
+                    id="tiktok" style="margin-right: 15px;" target="_blank"><i class="fa-brands fa-tiktok fa-2xl" style="
+                        color: #8a8d8b;"></i></a>
+            </div>
+            <div class="col s12 m12 l6" id="googlemap">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7733.17498874166!2d121.12794329076334!3d14.277262592184389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m5!1s0x3397d8628fb69d4b%3A0x1b912a86af127ae7!2sCabuyao%20City%20Hall%2C%20F.B.%20Bailon%20Street%2C%20Cabuyao%2C%20Laguna!3m2!1d14.271567!2d121.124341!4m3!3m2!1d14.2810534!2d121.1417936!5e0!3m2!1sen!2sph!4v1698844261796!5m2!1sen!2sph"
+                    style="border:0;width: 100%;height: 450px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <!--FOOTER-->
+    <footer class="responsive-footer grey darken-3">
+        <div class="row">
+            <div class="col l4 s12 center" id="footer">
+                <img src="logo/logo1.png" style="width: 50px;height: 50px">
+                <p class="grey-text text-lighten-4">Graceland Evangelical Christian Church</p>
+                <p class="grey-text center" id="g">B8 L10 Phase 4, St. Joseph Village 6, Brgy. Butong,
+                    Cabuyao, Philippines </p>
+            </div>
+            <div class="col l2 s12 center">
+                <h5 class="white-text ">About Us</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-1" href="about.html#div">Our Mission</a></li>
+                    <li><a class="grey-text text-lighten-1" href="about.html#div2">Our Vision</a></li>
+                    <li><a class="grey-text text-lighten-1" href="statement.html">Statement of Faith</a></li>
+                    <li><a class="grey-text text-lighten-1" href="pastor.html">Pastors</a></li>
+                </ul>
+            </div>
+            <div class="col l2 s12 center">
+                <h5 class="white-text ">Ministries</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-1" href="#!">Worship Ministry</a></li>
+                    <li><a class="grey-text text-lighten-1" href="#!">Media Ministry</a></li>
+                    <li><a class="grey-text text-lighten-1" href="ministry.html#youth">Youth & Children</a></li>
+                    <li><a class="grey-text text-lighten-1" href="#!">Men & Women</a></li>
+                    <li><a class="grey-text text-lighten-1" href="#!">Outreach & Evangelism</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12 center">
+                <h5 class="white-text">Follow Us</h5>
+                <a href="https://www.facebook.com/GracelandCabuyao?mibextid=ZbWKwL" id="fb"
+                    style="margin-right: 15px;" target="_blank"><i class="fa-brands fa-facebook fa-2xl"" style="
+                        color: #b2b5b2;"></i></a>
+                <a href="https://www.instagram.com/gecccabuyao2023/?fbclid=IwAR0AHRe6Ot2PzK8ethdVhdV2UZS_27osssLWhv9Tq9Swz2wsa0KCha_wXtQ"
+                    id="insta" style="margin-right: 15px;" target="_blank"><i class="fa-brands fa-instagram fa-2xl"
+                        style="color: #8a8d8b;"></i></a>
+                <a href="https://www.tiktok.com/@gecccabuyao?fbclid=IwAR2_cLg3I0ij6pCE4oOqpeNUPH7OdzqK5XfKpyICA0ff_ThBVwhDUPJYULE"
+                    id="tiktok" style="margin-right: 15px;" target="_blank"><i
+                        class="fa-brands fa-tiktok fa-2xl"" style=" color: #8a8d8b;"></i></a>
+            </div>
+
+    <div class="col s12">
+        <div class="container">
+            <p class="grey-text">© GECC 2023</p>
+            <a class="grey-text right" href="#!">&nbsp;Privacy Policy</a>
+            <a class="grey-text right" href="#!">Term of Use |&nbsp;</a>
+            <p class="site grey-text">Site design by Juvilyn Ytang</p>
+        </div>
+    </div>
+</div>
+</footer>
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <script>
+        $(document).ready(function () {
+            $('.parallax').parallax();
+            // slider init
+            $('.slider').slider({
+                duration: 1000,
+                interval: 8000,
+                indicators: 'false'
+            });
+            $('select').formSelect();
+            M.updateTextFields();
+            $(".dropdown-trigger").dropdown({
+                hover: 'true'
+            });
+            // Sidenav init
+            $('.sidenav').sidenav();
+            $('.scrollspy').scrollSpy();
+            $('.modal').modal({});
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true
+            });
+            //navbar
+            window.onscroll = function () { makeNavbarSticky() };
+
+            function makeNavbarSticky() {
+                var navbar = document.getElementById("sticky-nav");
+                if (window.pageYOffset > 0) {
+                    navbar.classList.add("sticky");
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+            $('.collapsible').collapsible()
+        });
+
+    </script>
+</body>
+
+</html>
